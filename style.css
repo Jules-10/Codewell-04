@@ -1,7 +1,105 @@
-*, :any-link{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+a:any-link{
     text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap:  var(--main-paddings);
+    background-color: #f4f5f7;
+    width: 100vw;
+    overflow-x: hidden;
+    --main-paddings: 20px;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+header, footer{
+    padding: 0 var(--main-paddings);
+}
+header, footer, section{
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header nav{
+    display: none;
+}
+header nav > *{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    color: #65676B;
+    text-align: center;
+    width: 100%;
+    transition-duration: .2s;
+}
+
+header .self-actions{
+    display: none;
+}
+header .self-actions .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+header .self-actions > img{
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #65676B;
+}
+
+header nav a:hover{
+    background-color: #65676B18;
+    color: #000;
+}
+
+header #burger-menu:hover ~ nav, header nav:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: absolute;
+    top: calc(var(--main-paddings) + 8px);
+    right: calc(var(--main-paddings) + 8px);
+    width: calc( 100vw - 16px - var(--main-paddings)*2);
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 #00000055;
+}
+header #burger-menu:hover ~ nav .self-actions, header nav:hover .self-actions{
+    width: calc(100% + 40px);
+    padding: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 600;
+    margin: -20px -20px 10px -20px;
+    border-radius: 0;
+    background-color: #65676B11;
 }
