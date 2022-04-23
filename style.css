@@ -181,9 +181,19 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     gap: 20px;
 }
 
+.post .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .post .content img{
     width: 100vw;
+    height: 240px;
+    object-fit: cover;
 }
+
 
 .post .interaction{
     display: flex;
