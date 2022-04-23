@@ -10,25 +10,6 @@ a:any-link{
     text-decoration: none;
 }
 
-/* phone display */
-@media screen and (max-width: 640px){
-    .tablet:not(.phone), .computer:not(.phone){
-        display: none;
-    }
-}
-
-/* tablet display */
-@media screen and (min-width: 641px) and (max-width: 1024px) {
-    .phone:not(.tablet), .computer:not(.tablet){
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1025px){
-    .phone:not(.computer), .tablet:not(.computer){
-        display: none;
-    }
-}
 
 body{
     display: flex;
@@ -36,7 +17,7 @@ body{
     gap:  var(--main-paddings);
     background-color: #f4f5f7;
     width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     --main-paddings: 20px;
 }
 body::-webkit-scrollbar{
@@ -128,4 +109,75 @@ header nav.phone .menu-content a:hover{
 header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     display: flex;
     flex-direction: column;
+}
+
+
+#main-content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#main-content section{
+    padding: 0 var(--main-paddings);
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+#main-content .write-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#main-content .write-comment .input-space{
+    margin-right: -24px; /* 24px = width of the image in the placeholder */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main-content .write-comment input{
+    width: calc(100vw - 2*var(--main-paddings) - 20px - 30px);
+    text-overflow: ellipsis;
+    padding: 15px 33% 15px 20px;
+    border: 1px solid #0003;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+#main-content .write-comment .image-placeholder{
+    position: relative;
+    left: -44px;
+}
+
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+/* phone display */
+@media screen and (max-width: 640px){
+    .tablet:not(.phone), .computer:not(.phone){
+        display: none;
+    }
+}
+
+/* tablet display */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .phone:not(.tablet), .computer:not(.tablet){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .phone:not(.computer), .tablet:not(.computer){
+        display: none;
+    }
 }
