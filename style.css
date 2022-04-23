@@ -17,17 +17,17 @@ body{
     gap:  var(--main-paddings);
     background-color: #f4f5f7;
     width: 100vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     --main-paddings: 20px;
 }
 body::-webkit-scrollbar{
     width: 0;
 }
 
-header, footer{
+header{
     padding: 0 var(--main-paddings);
 }
-header, footer, section{
+header, section{
     background-color: #fff;
 }
 
@@ -121,7 +121,9 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
 #main-content section{
     padding: 0 var(--main-paddings);
     width: 100%;
-    margin-bottom: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -194,7 +196,6 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     object-fit: cover;
 }
 
-
 .post .interaction{
     display: flex;
     flex-direction: row;
@@ -207,6 +208,114 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
 }
 
 
+section.links-suggestion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px var(--main-paddings);
+    margin-bottom: 20px;
+}
+section.links-suggestion h5{
+    color: #65676B;
+    font-size: 1em;
+}
+section.links-suggestion ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+section.links-suggestion ul li{
+    list-style-type: none;
+}
+section.links-suggestion ul li .title{
+    font-weight: 700;
+}
+section.links-suggestion ul li .foot{
+    width: 100%;
+    color: #65676B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+}
+section.links-suggestion a.open-window{
+    text-decoration: underline #f9690e;
+    color: #f9690e;
+    font-weight: 600;
+}
+
+section.links-suggestion ul.single-lines li{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    color: #65676B;
+}
+
+
+.live{
+    width: 100vw;
+    height: 300px;
+}
+.live img.background-live{
+    height: 300px;
+    width: 100vw;
+    object-fit: cover;
+}
+.live .over-live{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -4px;
+    top: -300px;
+    padding: 20px;
+    background: linear-gradient(to top, #000f 0, #0000 80px);
+    color: #fff;
+}
+.live .over-live .head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.live .over-live .head .live-button{
+    background-color: #ec6580;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: .7em;
+    font-weight: 500;
+}
+.live .over-live .head .live-watches{
+    background-color: #9c969c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: .7em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.live .over-live .foot{
+    width: 66%;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+
+
+footer{
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+}
 
 
 
