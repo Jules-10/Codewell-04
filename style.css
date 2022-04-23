@@ -85,7 +85,7 @@ header nav.phone{
     top: calc(var(--main-paddings) + 10px);
 
     border-radius: 20px;
-    background-color: #fafbfc;
+    background-color: #fff;
     box-shadow: 0 10px 30px 0 #00000030 ;
 
     width: calc(100vw - var(--main-paddings)*2 - 20px);
@@ -95,7 +95,7 @@ header nav.phone{
 header nav.phone .self-actions{
     border-radius: 20px 20px 0 0;
     padding: 40px;
-    background-color: #f0f1f2;
+    background-color: #e3e6e9;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,7 +122,7 @@ header nav.phone .menu-content a{
     transition-duration: .2s;
 }
 header nav.phone .menu-content a:hover{
-    background-color: #f2f3f4;
+    background-color: #e3e6e9;
 }
 
 header #burger-menu:hover ~ nav.phone, nav.phone:hover{
