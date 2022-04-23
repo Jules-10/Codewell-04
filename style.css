@@ -56,7 +56,7 @@ header{
 .self-actions .notifications{
     padding: 5px;
     border-radius: 50%;
-    border: 1px solid #0005;
+    border: 1px solid #65676B;
 }
 
 header nav.phone{
@@ -121,7 +121,7 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
 #main-content section{
     padding: 0 var(--main-paddings);
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 
@@ -156,6 +156,44 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.post .head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.post .head .profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.post .head .profile .profile-name{
+    font-weight: 700;
+}
+.post .head .profile .time{
+    color: #65676B;
+}
+.post .foot{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.post .content img{
+    width: 100vw;
+}
+
+.post .interaction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #65676B;
+    border: 1px solid #0003;
+    border-radius: 5px;
+    padding: 7px 14px;
 }
 
 
