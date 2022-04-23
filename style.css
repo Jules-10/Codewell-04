@@ -215,6 +215,7 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     .tablet:not(.phone), .computer:not(.phone){
         display: none;
     }
+
 }
 
 /* tablet display */
