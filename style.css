@@ -17,7 +17,7 @@ body{
     gap:  var(--main-paddings);
     background-color: #f4f5f7;
     width: 100vw;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     --main-paddings: 20px;
     --main-content-paddings: 0px;
 }
@@ -210,13 +210,19 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     padding: 7px 14px;
 }
 
+#main-content div.links-suggestion-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+}
 
 section.links-suggestion{
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 20px var(--main-paddings);
-    margin-bottom: 20px;
 }
 section.links-suggestion h5{
     color: #65676B;
@@ -337,10 +343,14 @@ footer{
         display: none;
     }
     body #main-content{
-        --main-content-paddings: 20px;
+        --main-content-paddings: 30px;
     }
+    body 
     body #main-content section, #main-content section.live img.background-live, #main-content section.live .over-live{
-        border-radius: 10px;
+        border-radius: 7px;
+    }
+    #main-content div.links-suggestion-container{
+        flex-direction: row;
     }
 }
 
