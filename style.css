@@ -357,13 +357,27 @@ footer{
     .phone:not(.computer), .tablet:not(.computer){
         display: none;
     }
+    body #main-content{
+        --main-content-paddings: 100px;
+    }
 
     #main-content{
         display: flex;
         flex-direction: row;
         gap: 20px;
+        padding-top: calc(var(--main-content-paddings)/3);
+        padding-bottom: calc(var(--main-content-paddings)/3);
     }
-    #main-content > * {
-        width: 33%;
+    #main-content > #left, #main-content > #right {
+        width: 25%;
+    }
+    #main-content > #center-computer {
+        width: 50%;
+    }
+    body #main-content section, #main-content section.live img.background-live, #main-content section.live .over-live{
+        border-radius: 7px;
+    }
+    #main-content .write-comment input{
+        width: calc((100vw - 2*var(--main-paddings) - 2*var(--main-content-paddings)) /2 - 90px);
     }
 }
