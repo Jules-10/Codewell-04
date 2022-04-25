@@ -210,7 +210,7 @@ header #burger-menu:hover ~ nav.phone, nav.phone:hover{
     padding: 7px 14px;
 }
 
-#main-content div.links-suggestion-container{
+.links-suggestion-container{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -345,7 +345,6 @@ footer{
     body #main-content{
         --main-content-paddings: 30px;
     }
-    body 
     body #main-content section, #main-content section.live img.background-live, #main-content section.live .over-live{
         border-radius: 7px;
     }
@@ -354,10 +353,17 @@ footer{
     }
 }
 
-
-
 @media screen and (min-width: 1025px){
     .phone:not(.computer), .tablet:not(.computer){
         display: none;
+    }
+
+    #main-content{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #main-content > * {
+        width: 33%;
     }
 }
