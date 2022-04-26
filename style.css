@@ -46,7 +46,7 @@ header{
 .self-actions .profile{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 7px;
     align-items: center;
 }
 .self-actions .profile p{
@@ -342,7 +342,7 @@ footer{
     .phone:not(.tablet), .computer:not(.tablet){
         display: none;
     }
-    body #main-content{
+    body{
         --main-content-paddings: 30px;
     }
     body #main-content section, #main-content section.live img.background-live, #main-content section.live .over-live{
@@ -357,9 +357,35 @@ footer{
     .phone:not(.computer), .tablet:not(.computer){
         display: none;
     }
-    body #main-content{
+    
+    body{
         --main-content-paddings: 100px;
     }
+
+    header{
+        padding-left: var(--main-content-paddings);
+        padding-right: var(--main-content-paddings);
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+    header nav a:any-link{
+        color: #65676B;
+        transition-duration: .2s;
+    }
+    header nav a:hover{
+        color: #000;
+    }
+    header .self-actions{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
 
     #main-content{
         display: flex;
