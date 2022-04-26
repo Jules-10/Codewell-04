@@ -283,7 +283,7 @@ section.links-suggestion ul.single-lines li{
     position: relative;
     margin-top: -4px;
     top: -300px;
-    padding: 20px;
+    padding: 15px 20px 20px 20px;
     background: linear-gradient(to top, #000f 0, #0002 40%, #0000 50%);
     color: #fff;
 }
@@ -314,6 +314,7 @@ section.links-suggestion ul.single-lines li{
 }
 .live .over-live .foot{
     width: 66%;
+    min-width: 190px;
     font-weight: 600;
     font-size: 1em;
 }
