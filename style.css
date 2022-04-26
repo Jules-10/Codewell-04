@@ -25,14 +25,12 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
-header{
-    padding: 0 var(--main-paddings);
-}
 header, section{
     background-color: #fff;
 }
 
 header{
+    padding: 0 var(--main-paddings);
     display: flex;
     flex-direction: row;
     align-items: center;
